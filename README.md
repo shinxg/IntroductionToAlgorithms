@@ -1,1 +1,1 @@
-code in book **<<Introduction to Algorithms>>**
+code in book Introduction to Algorithms
