@@ -10,11 +10,27 @@
 #include "MergeSorting.h"
 #include "InsertionSorting.h"
 #include "SelectSorting.h"
+#include "HeapSorting.h"
+
 void PrintArray(int* array, int length);
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     int array[6] = {5, 2, 4, 6, 1, 3};
+    
+    HEAP heap;
+    heap.heap = malloc(sizeof(int)*10);
+    heap.heap_size = 10;
+    heap.length = 10;
+    int heaparray[10] = {4, 1, 3, 2, 16, 9, 10, 14, 8, 7};
+    int i;
+    for (i = 0; i < 10; i++) {
+        heap.heap[i] = heaparray[i];
+    }
+    BuildMaxHeap(&heap);
+    PrintArray(heap.heap, 10);
+    HeapSort(&heap);
+    PrintArray(heap.heap, 10);
     
     MergeSorting(array, 0, 5);
     PrintArray(array, 6);

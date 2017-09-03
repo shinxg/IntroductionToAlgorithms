@@ -57,9 +57,11 @@ SUBARRAY* FindMaxiumSubArray(int* array, int low, int high){
         final->sum = array[low];
     } else {
         int mid = (low + high)/2;
+        //divide
         left = FindMaxiumSubArray(array, low, mid);
         right = FindMaxiumSubArray(array, mid + 1 , high);
         cross = FindMaxCrossingSubarray(array, low, mid, high);
+        //conquer
         if (cross->sum >= left->sum && cross->sum >= right->sum) {
             final = cross;
         } else if (left->sum >= cross->sum && left->sum >= right->sum) {

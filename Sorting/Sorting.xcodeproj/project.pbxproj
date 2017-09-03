@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2926E3B81F5BE394009DA7CB /* HeapSorting.c in Sources */ = {isa = PBXBuildFile; fileRef = 2926E3B61F5BE394009DA7CB /* HeapSorting.c */; };
 		29B390111F5A410F00C914B5 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 29B390101F5A410F00C914B5 /* main.c */; };
 		29B390191F5A413F00C914B5 /* InsertionSorting.c in Sources */ = {isa = PBXBuildFile; fileRef = 29B390171F5A413F00C914B5 /* InsertionSorting.c */; };
 		29B3901C1F5A477A00C914B5 /* SelectSorting.c in Sources */ = {isa = PBXBuildFile; fileRef = 29B3901A1F5A477A00C914B5 /* SelectSorting.c */; };
@@ -26,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2926E3B61F5BE394009DA7CB /* HeapSorting.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HeapSorting.c; sourceTree = "<group>"; };
+		2926E3B71F5BE394009DA7CB /* HeapSorting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeapSorting.h; sourceTree = "<group>"; };
 		29B3900D1F5A410F00C914B5 /* Sorting */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Sorting; sourceTree = BUILT_PRODUCTS_DIR; };
 		29B390101F5A410F00C914B5 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		29B390171F5A413F00C914B5 /* InsertionSorting.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = InsertionSorting.c; sourceTree = "<group>"; };
@@ -73,6 +76,8 @@
 				29B3901A1F5A477A00C914B5 /* SelectSorting.c */,
 				29B3901B1F5A477A00C914B5 /* SelectSorting.h */,
 				29B390181F5A413F00C914B5 /* InsertionSorting.h */,
+				2926E3B61F5BE394009DA7CB /* HeapSorting.c */,
+				2926E3B71F5BE394009DA7CB /* HeapSorting.h */,
 			);
 			path = Sorting;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 			files = (
 				29B390191F5A413F00C914B5 /* InsertionSorting.c in Sources */,
 				29B3901F1F5A56A600C914B5 /* MergeSorting.c in Sources */,
+				2926E3B81F5BE394009DA7CB /* HeapSorting.c in Sources */,
 				29B390111F5A410F00C914B5 /* main.c in Sources */,
 				29B3901C1F5A477A00C914B5 /* SelectSorting.c in Sources */,
 			);
@@ -266,6 +272,7 @@
 				29B390161F5A410F00C914B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
