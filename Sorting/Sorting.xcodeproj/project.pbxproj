@@ -12,6 +12,7 @@
 		29B390191F5A413F00C914B5 /* InsertionSorting.c in Sources */ = {isa = PBXBuildFile; fileRef = 29B390171F5A413F00C914B5 /* InsertionSorting.c */; };
 		29B3901C1F5A477A00C914B5 /* SelectSorting.c in Sources */ = {isa = PBXBuildFile; fileRef = 29B3901A1F5A477A00C914B5 /* SelectSorting.c */; };
 		29B3901F1F5A56A600C914B5 /* MergeSorting.c in Sources */ = {isa = PBXBuildFile; fileRef = 29B3901D1F5A56A600C914B5 /* MergeSorting.c */; };
+		29F9E0ED1F6907FC0032D664 /* QuickSorting.c in Sources */ = {isa = PBXBuildFile; fileRef = 29F9E0EB1F6907FC0032D664 /* QuickSorting.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,8 @@
 		29B3901B1F5A477A00C914B5 /* SelectSorting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectSorting.h; sourceTree = "<group>"; };
 		29B3901D1F5A56A600C914B5 /* MergeSorting.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MergeSorting.c; sourceTree = "<group>"; };
 		29B3901E1F5A56A600C914B5 /* MergeSorting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MergeSorting.h; sourceTree = "<group>"; };
+		29F9E0EB1F6907FC0032D664 /* QuickSorting.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = QuickSorting.c; sourceTree = "<group>"; };
+		29F9E0EC1F6907FC0032D664 /* QuickSorting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickSorting.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,8 @@
 				29B390181F5A413F00C914B5 /* InsertionSorting.h */,
 				2926E3B61F5BE394009DA7CB /* HeapSorting.c */,
 				2926E3B71F5BE394009DA7CB /* HeapSorting.h */,
+				29F9E0EB1F6907FC0032D664 /* QuickSorting.c */,
+				29F9E0EC1F6907FC0032D664 /* QuickSorting.h */,
 			);
 			path = Sorting;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 			files = (
 				29B390191F5A413F00C914B5 /* InsertionSorting.c in Sources */,
 				29B3901F1F5A56A600C914B5 /* MergeSorting.c in Sources */,
+				29F9E0ED1F6907FC0032D664 /* QuickSorting.c in Sources */,
 				2926E3B81F5BE394009DA7CB /* HeapSorting.c in Sources */,
 				29B390111F5A410F00C914B5 /* main.c in Sources */,
 				29B3901C1F5A477A00C914B5 /* SelectSorting.c in Sources */,

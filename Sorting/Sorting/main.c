@@ -11,6 +11,7 @@
 #include "InsertionSorting.h"
 #include "SelectSorting.h"
 #include "HeapSorting.h"
+#include "QuickSorting.h"
 
 void PrintArray(int* array, int length);
 
@@ -18,6 +19,8 @@ int main(int argc, const char * argv[]) {
     // insert code here...
     int array[6] = {5, 2, 4, 6, 1, 3};
     
+    QuickSort(array, 0, 5);
+    PrintArray(array, 6);
     HEAP heap;
     heap.heap = malloc(sizeof(int)*10);
     heap.heap_size = 10;
