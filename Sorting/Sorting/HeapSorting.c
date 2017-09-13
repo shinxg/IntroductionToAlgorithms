@@ -14,7 +14,6 @@ void MaxHeapify(HEAP* heap, int i){
     int left = i*2;
     int right = i*2 + 1;
     
-    
     int LargestIndex;
     //judge whether the childs of node i is bigger than it or not
     if ( left <= heap->heap_size && heap->heap[left - 1] > heap->heap[i-1]) {
@@ -58,4 +57,52 @@ void HeapSort(HEAP* heap){
         heap->heap_size--;
         MaxHeapify(heap, 1);
     }
+}
+
+//返回队列中最大的值
+int HeapMaxium(HEAP* heap){
+    if (heap->heap_size != 0) {
+        return heap->heap[0];
+    } else {
+        //mean there is no element in the priority queue
+        return INT32_MIN;
+    }
+}
+
+//返回并删除最大值
+int HeapExtractMax(HEAP* heap){
+    int max;
+    if (heap->heap_size != 0) {
+        max = heap->heap[0];
+        heap->heap[0] = heap->heap[heap->heap_size - 1];
+        heap->heap_size --;
+        MaxHeapify(heap, 1);
+        return max;
+    }
+    else {
+        //mean there is no element in the priority queue
+        return INT32_MIN;
+    }
+}
+
+//将队列中某一个元素的值增加
+void HeapIncreaseKey(HEAP* heap, int i, int newkey){
+    if (newkey <= heap->heap[i-1]) {
+        //when the newkey is smaller the heap is still a max heap
+        return;
+    } else {
+        while (i > 1 && (heap->heap[i/2-1] < heap->heap[i-1])) {
+            int temp = heap->heap[i-1];
+            heap->heap[i-1] = heap->heap[i/2-1];
+            heap->heap[i/2-1] = temp;
+            i = i/2;
+        }
+    }
+}
+
+//将一个新的元素插入优先队列中
+void HeapInsertKey(HEAP* heap, int newkey){
+    heap->heap_size ++;
+    heap->heap[heap->heap_size - 1] = INT32_MIN;
+    HeapIncreaseKey(heap, heap->heap_size, newkey);
 }

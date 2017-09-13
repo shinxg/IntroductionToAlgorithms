@@ -26,4 +26,20 @@ void BuildMaxHeap(HEAP* heap);
 
 //实现堆排序
 void HeapSort(HEAP* heap);
+
+
+//优先队列常用于系统调度
+//使用堆实现最大优先队列
+//返回队列中最大的值
+int HeapMaxium(HEAP* heap);
+
+//返回并删除最大值
+int HeapExtractMax(HEAP* heap);
+
+//将队列中某一个元素的值增加
+void HeapIncreaseKey(HEAP* heap, int i, int newkey);
+
+//将一个新的元素插入优先队列中
+void HeapInsertKey(HEAP* heap, int newkey);
+
 #endif /* HeapSorting_h */
