@@ -24,10 +24,40 @@ int Partition(int* array, int p, int r){
     return i+1;
 }
 
-void QuickSort(int* array, int p, int r){
+int HoarePartition(int* array, int p, int r){
+    int pivot = array[p];
+    int i = p - 1;
+    int j = r + 1;
+    
+    while (true) {
+        do {
+            i = i + 1;
+        } while (array[i] < pivot);
+        do {
+            j = j - 1;
+        } while (array[j] > pivot);
+        if (i < j) {
+            int temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+        } else {
+            return j;
+        }
+    }
+}
+
+void QuickSort1(int* array, int p, int r){
     if (p < r) {
         int q = Partition(array, p, r);
-        QuickSort(array, q + 1, r);
-        QuickSort(array, p, q - 1);
+        QuickSort1(array, q + 1, r);
+        QuickSort1(array, p, q - 1);
+    }
+}
+
+void QuickSort2(int* array, int p, int r){
+    if (p < r) {
+        int q = HoarePartition(array, p, r);
+        QuickSort2(array, q + 1, r);
+        QuickSort2(array, p, q);//different here
     }
 }

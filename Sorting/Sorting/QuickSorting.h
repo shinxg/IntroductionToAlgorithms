@@ -10,6 +10,10 @@
 #define QuickSorting_h
 
 #include <stdio.h>
+#include <stdbool.h>
+
 int Partition(int* array, int p, int r);
-void QuickSort(int* array, int p, int r);
+int HoarePartition(int* array, int p, int r);
+void QuickSort1(int* array, int p, int r);
+void QuickSort2(int* array, int p, int r);
 #endif /* QuickSorting_h */
