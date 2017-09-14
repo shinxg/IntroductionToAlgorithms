@@ -13,6 +13,7 @@
 #include "HeapSorting.h"
 #include "QuickSorting.h"
 #include "CountingSort.h"
+#include "RadixSorting.h"
 
 void PrintArray(int* array, int length);
 
@@ -21,6 +22,10 @@ int main(int argc, const char * argv[]) {
     int array[6] = {5, 2, 4, 6, 1, 3};
     int A[12] = {0, 7, 2, 1, 5, 6, 7, 4, 4, 5, 6, 2};
     int B[12];
+    
+    int radixarray[8] = {170, 45, 75, 90, 802, 24, 2, 66};
+    RadixSort(radixarray, 8);
+    PrintArray(radixarray, 8);
     
     CountingSort(A, B, 7, 12);
     PrintArray(B, 12);
