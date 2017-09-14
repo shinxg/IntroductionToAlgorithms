@@ -12,12 +12,18 @@
 #include "SelectSorting.h"
 #include "HeapSorting.h"
 #include "QuickSorting.h"
+#include "CountingSort.h"
 
 void PrintArray(int* array, int length);
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     int array[6] = {5, 2, 4, 6, 1, 3};
+    int A[12] = {0, 7, 2, 1, 5, 6, 7, 4, 4, 5, 6, 2};
+    int B[12];
+    
+    CountingSort(A, B, 7, 12);
+    PrintArray(B, 12);
     
     QuickSort2(array, 0, 5);
     PrintArray(array, 6);
