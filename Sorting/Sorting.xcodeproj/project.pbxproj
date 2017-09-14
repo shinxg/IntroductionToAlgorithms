@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2926E3B81F5BE394009DA7CB /* HeapSorting.c in Sources */ = {isa = PBXBuildFile; fileRef = 2926E3B61F5BE394009DA7CB /* HeapSorting.c */; };
 		2978055C1F6A19D800092E49 /* RadixSorting.c in Sources */ = {isa = PBXBuildFile; fileRef = 2978055A1F6A19D800092E49 /* RadixSorting.c */; };
+		2978055F1F6A21B200092E49 /* BucketSorting.c in Sources */ = {isa = PBXBuildFile; fileRef = 2978055D1F6A21B200092E49 /* BucketSorting.c */; };
 		29B390111F5A410F00C914B5 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 29B390101F5A410F00C914B5 /* main.c */; };
 		29B390191F5A413F00C914B5 /* InsertionSorting.c in Sources */ = {isa = PBXBuildFile; fileRef = 29B390171F5A413F00C914B5 /* InsertionSorting.c */; };
 		29B3901C1F5A477A00C914B5 /* SelectSorting.c in Sources */ = {isa = PBXBuildFile; fileRef = 29B3901A1F5A477A00C914B5 /* SelectSorting.c */; };
@@ -34,6 +35,8 @@
 		2926E3B71F5BE394009DA7CB /* HeapSorting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeapSorting.h; sourceTree = "<group>"; };
 		2978055A1F6A19D800092E49 /* RadixSorting.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = RadixSorting.c; sourceTree = "<group>"; };
 		2978055B1F6A19D800092E49 /* RadixSorting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadixSorting.h; sourceTree = "<group>"; };
+		2978055D1F6A21B200092E49 /* BucketSorting.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = BucketSorting.c; sourceTree = "<group>"; };
+		2978055E1F6A21B200092E49 /* BucketSorting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BucketSorting.h; sourceTree = "<group>"; };
 		29B3900D1F5A410F00C914B5 /* Sorting */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Sorting; sourceTree = BUILT_PRODUCTS_DIR; };
 		29B390101F5A410F00C914B5 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		29B390171F5A413F00C914B5 /* InsertionSorting.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = InsertionSorting.c; sourceTree = "<group>"; };
@@ -93,6 +96,8 @@
 				29F9E0EF1F6930A60032D664 /* CountingSort.h */,
 				2978055A1F6A19D800092E49 /* RadixSorting.c */,
 				2978055B1F6A19D800092E49 /* RadixSorting.h */,
+				2978055D1F6A21B200092E49 /* BucketSorting.c */,
+				2978055E1F6A21B200092E49 /* BucketSorting.h */,
 			);
 			path = Sorting;
 			sourceTree = "<group>";
@@ -155,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29B390191F5A413F00C914B5 /* InsertionSorting.c in Sources */,
+				2978055F1F6A21B200092E49 /* BucketSorting.c in Sources */,
 				29B3901F1F5A56A600C914B5 /* MergeSorting.c in Sources */,
 				29F9E0ED1F6907FC0032D664 /* QuickSorting.c in Sources */,
 				2926E3B81F5BE394009DA7CB /* HeapSorting.c in Sources */,

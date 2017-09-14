@@ -14,24 +14,37 @@
 #include "QuickSorting.h"
 #include "CountingSort.h"
 #include "RadixSorting.h"
+#include "BucketSorting.h"
 
 void PrintArray(int* array, int length);
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     int array[6] = {5, 2, 4, 6, 1, 3};
-    int A[12] = {0, 7, 2, 1, 5, 6, 7, 4, 4, 5, 6, 2};
-    int B[12];
+    
+    
+//    int* test = NULL;
+//    test = Insert(test, 1, 1);
+//    PrintArray(test, 1);
+//    test = Insert(test, 2, 0);
+//    PrintArray(test, 2);
+    int BucketArray[10] = {78, 17, 39, 26, 72, 94, 21, 12, 23, 68};
+    BucketSort(BucketArray, 10);
+    PrintArray(BucketArray, 10);
+    
     
     int radixarray[8] = {170, 45, 75, 90, 802, 24, 2, 66};
     RadixSort(radixarray, 8);
     PrintArray(radixarray, 8);
     
+    int A[12] = {0, 7, 2, 1, 5, 6, 7, 4, 4, 5, 6, 2};
+    int B[12];
     CountingSort(A, B, 7, 12);
     PrintArray(B, 12);
     
     QuickSort2(array, 0, 5);
     PrintArray(array, 6);
+    
     HEAP heap;
     heap.heap = malloc(sizeof(int)*10);
     heap.heap_size = 10;
@@ -48,8 +61,10 @@ int main(int argc, const char * argv[]) {
     
     MergeSorting(array, 0, 5);
     PrintArray(array, 6);
+    
     SelectSorting(array, 6);
     PrintArray(array, 6);
+    
     InsertionSorting(array, 6);
     PrintArray(array, 6);
     
